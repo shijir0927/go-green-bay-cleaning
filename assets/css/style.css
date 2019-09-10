@@ -1,0 +1,452 @@
+                            * {
+                                margin: 0px;
+                                padding: 0px;
+                                box-sizing: border-box;
+                            }
+                            
+                            body {
+                                font-family: 'Poppins', sans-serif;
+                            }
+                            
+                            button {
+                                font-family: 'Poppins', sans-serif;
+                                border-radius: 10px;
+                            }
+                            
+                            header {
+                                display: flex;
+                                width: 100%;
+                                height: 10vh;
+                                margin: auto;
+                                align-items: center;
+                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                padding: 0 20px;
+                                position: fixed;
+                                background-color: white;
+                                z-index: 1000000;
+                            }
+                            
+                            .logo-container,
+                            .nav-links,
+                            .book-now {
+                                display: flex;
+                            }
+                            
+                            .book-now {
+                                color: #7ac043;
+                            }
+                            
+                            .logo-container img {
+                                height: 70px;
+                            }
+                            
+                            .logo-container {
+                                flex: 1;
+                            }
+                            
+                            .logo {
+                                font-weight: 600;
+                                margin: 5px;
+                                color: #7ac043;
+                                text-align: center;
+                            }
+                            
+                            nav {
+                                flex: 2;
+                            }
+                            
+                            .nav-links {
+                                justify-content: space-around;
+                                list-style: none;
+                            }
+                            
+                            .nav-link {
+                                color: #5f5f79;
+                                font-size: 18px;
+                                text-decoration: none;
+                            }
+                            
+                            .cart {
+                                flex: 1;
+                                justify-content: flex-end;
+                            }
+                            
+                            main {
+                                color: #7ac043;
+                                background-image: url("assets/images/clean-home-1.jpeg");
+                            }
+                            
+                            .presentation {
+                                display: flex;
+                                width: 90%;
+                                margin: auto;
+                                min-height: 80vh;
+                                align-items: center;
+                            }
+                            
+                            .introduction {
+                                flex: 1;
+                            }
+                            
+                            .intro-text h1 {
+                                font-size: 44px;
+                                font-weight: 500;
+                                /* background: linear-gradient(to right, #494964, #6f6f89);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; */
+                            }
+                            /* .cta {
+    padding: 50px 0px 0px 0px;
+} */
+                            /* .cta-select {
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+} */
+                            
+                            .cta-add {
+                                background: rgb(40, 101, 233);
+                                width: 150px;
+                                height: 50px;
+                                cursor: pointer;
+                                font-size: 16px;
+                                border: none;
+                                color: white;
+                                margin: 30px 0px 0px 0px;
+                            }
+                            
+                            .cover {
+                                flex: 1;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            
+                            .cover ul {
+                                height: 100%;
+                                animation: drop 1.5s ease;
+                                margin: 46px 0;
+                                font-size: 24px;
+                                font-weight: 400;
+                            }
+                            /* .big-circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 80%;
+}
+
+.medium-circle {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    height: 60%;
+    opacity: 0.4;
+}
+
+.small-circle {
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+.laptop-select {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 20%;
+} */
+                            
+                            .why-choose-us {
+                                border-bottom: 1px solid blue;
+                                border-top: 1px solid blue;
+                                /* background-color: #eff7ff; */
+                                background-color: #dcf8be;
+                            }
+                            
+                            .why-choose-us-90,
+                            .our-services-90,
+                            .our-happy-customers-90,
+                            .contact-us-90 {
+                                margin: auto;
+                                width: 100%;
+                                padding: 60px 0px;
+                            }
+                            
+                            .why-choose-us-90 h1,
+                            .our-services-90 h1,
+                            .our-happy-customers-90 h1,
+                            .contact-us-90 h1 {
+                                font-size: 40px;
+                                text-align: center;
+                                margin: 20px 0px 40px 0px;
+                                color: #7ac043;
+                            }
+                            
+                            .reasons {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-template-rows: 1fr 1fr;
+                                grid-gap: 20px;
+                            }
+                            
+                            .reason {
+                                background-color: lightgreen;
+                                padding: 10px;
+                                border-radius: 10px;
+                            }
+                            
+                            .reason-text {
+                                display: grid;
+                                grid-template-columns: 1fr 4fr;
+                                justify-items: center;
+                                margin: 10px;
+                            }
+                            
+                            .reason-img {
+                                width: 30%;
+                            }
+                            
+                            .our-services,
+                            .contact-us {
+                                background-color: #a6d6e7;
+                            }
+                            
+                            .services {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                grid-gap: 20px;
+                            }
+                            
+                            .service {
+                                display: flex;
+                                height: 100px;
+                                background-color: lightyellow;
+                                text-align: center;
+                                justify-content: center;
+                                border-radius: 10px;
+                                padding-top: 35px;
+                            }
+                            
+                            .our-happy-customers {
+                                border-bottom: 1px solid blue;
+                                border-top: 1px solid blue;
+                                background-color: #dcf8be;
+                            }
+                            
+                            .review-name {
+                                text-align: center;
+                            }
+                            /* Slideshow container */
+                            
+                            .slideshow-container {
+                                max-width: 1000px;
+                                position: relative;
+                                margin: auto;
+                            }
+                            /* Hide the images by default */
+                            
+                            .mySlides {
+                                display: none;
+                            }
+                            /* Next & previous buttons */
+                            
+                            .prev,
+                            .next {
+                                cursor: pointer;
+                                position: absolute;
+                                top: 50%;
+                                width: auto;
+                                margin-top: -22px;
+                                padding: 16px;
+                                color: white;
+                                font-weight: bold;
+                                font-size: 18px;
+                                transition: 0.6s ease;
+                                border-radius: 0 3px 3px 0;
+                                user-select: none;
+                            }
+                            /* Position the "next button" to the right */
+                            
+                            .next {
+                                right: 0;
+                                border-radius: 3px 0 0 3px;
+                            }
+                            /* On hover, add a black background color with a little bit see-through */
+                            
+                            .prev:hover,
+                            .next:hover {
+                                background-color: rgba(0, 0, 0, 0.8);
+                            }
+                            /* Caption text */
+                            
+                            .text {
+                                color: black;
+                                font-size: 15px;
+                                padding: 8px 12px;
+                                width: 80%;
+                                text-align: center;
+                                margin-left: 10%;
+                            }
+                            /* The dots/bullets/indicators */
+                            
+                            .dot {
+                                cursor: pointer;
+                                height: 15px;
+                                width: 15px;
+                                margin: 0 2px;
+                                background-color: #bbb;
+                                border-radius: 50%;
+                                display: inline-block;
+                                transition: background-color 0.6s ease;
+                            }
+                            
+                            .active,
+                            .dot:hover {
+                                background-color: #717171;
+                            }
+                            
+                            .contact-us {
+                                border-bottom: 1px solid blue;
+                                border-top: 1px solid blue;
+                            }
+                            
+                            fieldset {
+                                padding: 20px;
+                            }
+                            
+                            form {
+                                width: 50%;
+                                margin-left: 25%
+                            }
+                            
+                            input {
+                                padding: 12px 20px;
+                                margin: 10px;
+                                border: none;
+                                border-bottom: 2px solid navy;
+                                border-radius: 10px;
+                                /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-areas: "name email" "subject" "message"; */
+                            }
+                            
+                            .name {
+                                width: 30%;
+                            }
+                            
+                            .email {
+                                width: 30%;
+                            }
+                            
+                            .subject {
+                                width: 64%;
+                            }
+                            
+                            .message {
+                                width: 64%;
+                                height: 100px;
+                            }
+                            
+                            .submit {
+                                background-color: lightpink;
+                                border-radius: 10px;
+                            }
+                            
+                            footer {
+                                background-color: white;
+                                background-color: cornflowerblue;
+                            }
+                            
+                            .footer-90 {
+                                width: 90%;
+                                margin: auto;
+                                display: grid;
+                                grid-template-columns: 2fr 1fr 1fr;
+                                grid-gap: 40px;
+                                padding: 10px 10px 40px 10px;
+                            }
+                            
+                            .footer-bottom {
+                                text-align: center;
+                                height: 50px;
+                            }
+                            /* Fading animation */
+                            
+                            .fade {
+                                -webkit-animation-name: fade;
+                                -webkit-animation-duration: 1.5s;
+                                animation-name: fade;
+                                animation-duration: 1.5s;
+                            }
+                            
+                            @-webkit-keyframes fade {
+                                from {
+                                    opacity: .4
+                                }
+                                to {
+                                    opacity: 1
+                                }
+                            }
+                            
+                            @keyframes fade {
+                                from {
+                                    opacity: .4
+                                }
+                                to {
+                                    opacity: 1
+                                }
+                            }
+                            
+                            @keyframes drop {
+                                0% {
+                                    opacity: 0;
+                                    transform: translateY(-80px);
+                                }
+                                100% {
+                                    opacity: 1;
+                                    transform: translateY(0px);
+                                }
+                            }
+                            
+                            @media screen and (max-width: 1024px) {
+                                .presentation {
+                                    flex-direction: column;
+                                }
+                                .introduction {
+                                    margin-top: 5vh;
+                                    text-align: center;
+                                }
+                                .intro-text h1 {
+                                    font-size: 30px;
+                                }
+                                .intro-text p {
+                                    font-size: 18px;
+                                }
+                                .cta {
+                                    padding: 10px 0px 0px 0px;
+                                }
+                                .laptop-select {
+                                    bottom: 5%;
+                                    right: 50%;
+                                    width: 50%;
+                                    transform: translate(50%, 5%);
+                                }
+                                .cover img {
+                                    height: 80%;
+                                }
+                                .small-circle,
+                                .medium-circle,
+                                .big-circle {
+                                    opacity: 0.2;
+                                }
+                            }
