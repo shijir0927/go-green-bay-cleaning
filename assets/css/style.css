@@ -74,8 +74,38 @@
                             main {
                                 /* color: #7ac043; */
                                 color: black;
-                                background-image: url("assets/images/clean-home-1.jpeg");
+                                position: relative;
+                                overflow: hidden;
                                 /* background: linear-gradient(to right, #89ec92, #d4f7d6); */
+                            }
+                            
+                            .home-page {
+                                /* background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover; */
+                                color: black;
+                                position: relative;
+                                overflow: hidden;
+                            }
+                            
+                            .home-page:before {
+                                content: ' ';
+                                display: block;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                z-index: 1;
+                                opacity: 0.6;
+                                background-image: url("../images/clean-photo.jpg");
+                                background-repeat: no-repeat;
+                                background-position: 50% 0;
+                                -ms-background-size: cover;
+                                -o-background-size: cover;
+                                -moz-background-size: cover;
+                                -webkit-background-size: cover;
+                                background-size: cover;
                             }
                             
                             .presentation {
@@ -84,18 +114,25 @@
                                 margin: auto;
                                 min-height: 80vh;
                                 align-items: center;
+                                z-index: 2;
                             }
                             
                             .introduction {
                                 flex: 1;
+                                z-index: 2;
                             }
                             
                             .intro-text h1 {
-                                font-size: 44px;
-                                font-weight: 500;
+                                font-size: 48px;
+                                font-weight: bolder;
+                                color: rgb(64, 92, 255);
                                 /* background: linear-gradient(to right, #494964, #6f6f89);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent; */
+                            }
+                            
+                            .intro-text p {
+                                font-size: 20px;
                             }
                             /* .cta {
     padding: 50px 0px 0px 0px;
@@ -128,14 +165,15 @@
                                 justify-content: center;
                                 /* border: 1px outset black;
                                 border-radius: 10px; */
+                                z-index: 2;
                             }
                             
                             .cover ul {
                                 height: 100%;
                                 animation: drop 1.5s ease;
                                 margin: 46px 0;
-                                font-size: 24px;
-                                font-weight: 400;
+                                font-size: 22px;
+                                font-weight: 200;
                             }
                             /* .big-circle {
     position: absolute;
@@ -174,7 +212,9 @@
                                 border-bottom: 1px solid blue;
                                 border-top: 1px solid blue;
                                 /* background-color: #eff7ff; */
-                                background-color: #dcf8be;
+                                /* background-color: #dcf8be; */
+                                /* background-color: #dcf8be; */
+                                background-image: linear-gradient(-90deg, #dcf8be, #a6d6e7);
                             }
                             
                             .why-choose-us-90,
@@ -206,10 +246,10 @@
                             }
                             
                             .reason {
-                                background-color: lightgreen;
                                 padding: 10px;
                                 border-radius: 10px;
                                 border: 1px outset black;
+                                background-color: white;
                             }
                             
                             .reason-text {
@@ -225,7 +265,7 @@
                             
                             .our-services,
                             .contact-us {
-                                background-color: #a6d6e7;
+                                background-image: linear-gradient(-45deg, #a6c0e7, #c8f8be);
                             }
                             
                             .services {
@@ -235,20 +275,52 @@
                             }
                             
                             .service {
-                                display: flex;
-                                height: 100px;
-                                background-color: lightyellow;
+                                background-color: white;
                                 text-align: center;
                                 justify-content: center;
-                                border-radius: 10px;
-                                padding-top: 35px;
                                 border: 1px outset black;
+                                border-radius: 5px;
+                            }
+                            
+                            .service h3 {
+                                margin-top: 15px;
+                            }
+                            
+                            .service-image-home {
+                                position: flex;
+                                height: 200px;
+                                width: 100%;
+                                background-image: url("../images/home-cleaning.png");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                                justify-content: center;
+                            }
+                            
+                            .service-image-commercial {
+                                position: relative;
+                                height: 200px;
+                                width: 100%;
+                                background-image: url("../images/commercial-cleaning.png");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                            }
+                            
+                            .service-image-move {
+                                position: relative;
+                                height: 200px;
+                                width: 100%;
+                                background-image: url("../images/move.png");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
                             }
                             
                             .our-happy-customers {
                                 border-bottom: 1px solid blue;
                                 border-top: 1px solid blue;
-                                background-color: #dcf8be;
+                                background-image: linear-gradient(-90deg, #dcf8be, #a6d6e7);
                             }
                             
                             .review-name {
@@ -375,18 +447,19 @@
                             }
                             
                             .submit {
-                                background-color: lightpink;
+                                background: rgb(40, 101, 233);
                                 border-radius: 10px;
                                 padding: 12px 20px;
                                 margin: 10px;
                                 border: none;
                                 border-bottom: 2px solid navy;
                                 border-radius: 10px;
+                                color: white;
                             }
                             
                             footer {
-                                background-color: white;
-                                background-color: cornflowerblue;
+                                padding: 20px;
+                                background-color: #669ac9;
                             }
                             
                             .footer-90 {
@@ -416,7 +489,7 @@
                             
                             .get-your-quote {
                                 width: 100%;
-                                background-color: #a6d6e7;
+                                background-image: linear-gradient(-90deg, #dcf8be, #a6d6e7);
                                 border-bottom: 1px solid blue;
                                 border-top: 1px solid blue;
                             }
@@ -438,6 +511,7 @@
                             .about-us-info h2,
                             .about-us-info p {
                                 margin: 20px 0px;
+                                animation: drop 1.5s ease;
                             }
                             
                             .button-flex {
@@ -446,7 +520,7 @@
                             }
                             
                             .service-cards {
-                                background-color: white;
+                                background-image: linear-gradient( #dcf8be, #a6d6e7);
                                 width: 100%;
                                 border-bottom: 1px solid blue;
                                 border-top: 1px solid blue;
@@ -582,6 +656,10 @@
                                 border: 1px solid black;
                                 border-radius: 10px;
                                 padding: 20px;
+                            }
+                            
+                            #service-requesting {
+                                margin-left: 165px;
                             }
                             /* Fading animation */
                             

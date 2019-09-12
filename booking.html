@@ -17,7 +17,7 @@
 
         <div class="logo-container">
 
-            <img src="assets/images/logo.png" alt="logo" />
+            <a href="index.html"> <img src="assets/images/logo.png" alt="logo" /></a>
         </div>
         <nav>
             <ul class="nav-links">
@@ -39,8 +39,14 @@
             <h1>Schedule Online</h1>
             <div class="booking-section">
                 <div class="date-select">
-                    <h2>Date & Time:</h2>
+                    <h2>Date Requsting:</h2>
                     <input id="booking-date" class="booking-input" type="datetime-local">
+                    <h2>Service Requesting:</h2>
+                    <select id="service-requesting" class="booking-input" name="service-types">
+                        <option value="home-cleaning">Home Cleaning</option>
+                        <option value="commercial-cleaning">Commercial Cleaning</option>
+                        <option value="move-cleaning">Move-In/Move-Out Cleaning</option>
+                      </select>
                     <div class="booking-row">
                         <div>
                             <h2>Add Your Info:</h2>
@@ -58,7 +64,7 @@
                                     <input class="booking-input" type="email" id="mail" name="user_mail">
                                 </div>
                                 <div>
-                                    <label for="mail">Apt No:</label>
+                                    <label for="mail">Street Address:</label>
                                     <input class="booking-input" type="email" id="mail" name="user_mail">
                                 </div>
                                 <div>
