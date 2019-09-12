@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Green Bay | Cleaning Service</title>
@@ -14,20 +16,19 @@
     <header>
 
         <div class="logo-container">
-            <!-- <img src="./assets/images/clean-3614744_1280.png" alt="logo" />
-            <h2 class="logo">Green Bay</h2> -->
-            <img src="assets/images/logo.png" alt="logo" />
+
+            <a href="index.html"> <img src="assets/images/logo.png" alt="logo" /></a>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">About Us</a></li>
-                <li><a class="nav-link" href="#">Services</a></li>
-                <li><a class="nav-link" href="#">FAQ</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                <li><a class="nav-link" href="services.html">Services</a></li>
+                <li><a class="nav-link" href="faq.html">FAQ</a></li>
             </ul>
         </nav>
         <div class="book-now">
-            <h3>Book Now</h3>
+            <h3><a href="services.html" style="text-decoration: none">Book Now</a></h3>
         </div>
 
     </header>
@@ -43,7 +44,11 @@
                 </div>
                 <div class="cta">
                     <!-- <button class="cta-select">14 Inch</button> -->
-                    <button class="cta-add">Get A Quote</button>
+                    <button class="cta-add">
+                        <ul id = "scroll-thing">
+                            <li style="list-style-type: none;"><a href= "#contact-uss" style="color: white">Get A Quote</a></li>
+                        </ul>
+                    </button>
                 </div>
             </div>
             <div class="cover">
@@ -133,13 +138,19 @@
             <h1>Our Services</h1>
             <div class="services">
                 <div class="service">
-                    <h3> Home Cleaning</h3>
+
+                    <h3> <a style="text-decoration:none" href="services.html">Home Cleaning</a></h3>
+
                 </div>
                 <div class="service">
-                    <h3> Commercial Cleaning</h3>
+
+                    <h3> <a style="text-decoration:none" href="services.html">Commercial Cleaning</a></h3>
+
                 </div>
                 <div class="service">
-                    <h3> Move-In/Move-Out Cleaning</h3>
+
+                    <h3> <a style="text-decoration:none" href="services.html">Move-In/Move-Out Cleaning</a></h3>
+
                 </div>
             </div>
         </div>
@@ -192,26 +203,26 @@
             </div>
 
     </section>
+    <div data-spy="scroll" data-target="#scroll-thing" data-offset="0">
+        <section id="contact-uss" class="contact-us">
+            <div class="contact-us-90">
+                <h1>Contact Us For a FREE QUOTE!</h1>
+                <form class="contact-us-form" autocomplete="on">
+                    <fieldset>
 
-    <section class="contact-us">
-        <div class="contact-us-90">
-            <h1>Contact Us For a FREE QUOTE!</h1>
-            <form autocomplete="on">
-                <fieldset>
-
-                    <input class="name" type="text" name="firstname" placeholder="Name" cols="50">
-                    <input class="email" type="text" name="lastname" placeholder="Email">
-                    <br>
-                    <input class="subject" type="text" name="lastname" placeholder="Subject">
-                    <br>
-                    <input class="message" type="text" name="lastname" placeholder="Message">
-                    <br>
-                    <input class="submit" type="submit" value="Submit">
-                </fieldset>
-            </form>
-        </div>
-    </section>
-
+                        <input class="name" type="text" name="firstname" placeholder="Name" cols="50">
+                        <input class="email" type="text" name="lastname" placeholder="Email">
+                        <br>
+                        <input class="subject" type="text" name="lastname" placeholder="Subject">
+                        <br>
+                        <input class="message" type="text" name="lastname" placeholder="Message">
+                        <br>
+                        <input class="submit" type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <div class="footer-90">
