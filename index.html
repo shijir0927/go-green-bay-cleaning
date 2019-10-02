@@ -8,31 +8,62 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/11ed4400a1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Green Bay | Cleaning Service</title>
 </head>
 
 <body>
-    <header>
-
-        <div class="logo-container">
-
-            <a href="index.html"> <img src="assets/images/logo.png" alt="logo" /></a>
+    <div class="header-top-full">
+        <div class="header-top">
+            <i class="fas fa-envelope-square top-icon" id="email"> hello@greenbay.com</i>
+            <i class="fas fa-phone"> (925)-565-4206</i>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="about-us.html">About Us</a></li>
-                <li><a class="nav-link" href="services.html">Services</a></li>
-                <li><a class="nav-link" href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-        <div class="book-now">
+    </div>
+    <!-- <div class="header-wrapper"> -->
+
+    <!-- <header> -->
+
+    <!-- <div class="logo-container">
+
+                <a href="index.html"> <img src="assets/images/logo.png" alt="logo" /></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li><a class="nav-link" href="services.html">Services</a></li>
+                    <li><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li>
+                        <a class="nav-link" href="services.html" style="text-decoration: none">Book Now</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                <i class="fa fa-bars"></i>
+            </a> -->
+    <!-- <div class="book-now">
             <h3><a href="services.html" style="text-decoration: none">Book Now</a></h3>
+        </div> -->
+    <div class="topnav-full">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about-us.html">About Us</a>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="faq.html">FAQ</a>
+            <a class="nav-link" href="services.html">Book Now</a>
+
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-
-    </header>
-
+    </div>
+    <!-- </header> -->
+    <!-- </div> -->
     <main class="home-page">
         <section class="presentation">
             <div class="introduction">
@@ -44,23 +75,29 @@
                 </div>
                 <div class="cta">
                     <!-- <button class="cta-select">14 Inch</button> -->
-                    <button class="cta-add">
+                    <a href="#contact-uss" style="color: white">
+                        <button class="cta-add">
                         <ul id = "scroll-thing">
-                            <li style="list-style-type: none;"><a href= "#contact-uss" style="color: white">Get A Quote</a></li>
+                            <li style="list-style-type: none;">Get A Quote</li>
                         </ul>
                     </button>
+                    </a>
                 </div>
             </div>
             <div class="cover">
                 <!-- <img src="./img/matebook.png" alt="matebook" /> -->
 
-                <ul>
+                <!-- <ul>
                     <li> One-off, weekly or fortnightly visits</li>
                     <li> Vetted & background-checked cleaners</li>
                     <li> Request the same cleaner for every visit</li>
                     <li> Book, manage & pay online</li>
                     <li> Simple price per hour</li>
-                </ul>
+                </ul> -->
+
+                <div id="image-holder">
+                    <img src="assets/images/before-after-4.jpg" width='600px'>
+                </div>
 
             </div>
         </section>
@@ -143,89 +180,95 @@
         </div>
     </section>
 
+    <div class="big-section">
+        <section class="our-services">
+            <div class="our-services-90">
+                <h1>Our Services</h1>
+                <a style="text-decoration:none" href="services.html">
+                    <div class="services">
+                        <div class="service">
 
-    <section class="our-services">
-        <div class="our-services-90">
-            <h1>Our Services</h1>
-            <div class="services">
-                <div class="service">
+                            <h3> Home Cleaning</h3>
 
-                    <h3> <a style="text-decoration:none" href="services.html">Home Cleaning</a></h3>
-                    <hr>
-                    <div class="service-image-home"></div>
-                </div>
-                <div class="service">
+                            <!-- <div class="service-image-home"></div> -->
+                        </div>
+                </a>
+                <a style="text-decoration:none" href="services.html">
+                    <div class="service">
 
-                    <h3> <a style="text-decoration:none" href="services.html">Commercial Cleaning</a></h3>
-                    <hr>
+                        <h3> Commercial Cleaning</h3>
 
-                    <div class="service-image-commercial"></div>
+                        <!-- <div class="service-image-commercial"></div> -->
 
-                </div>
-                <div class="service">
+                    </div>
+                </a>
+                <a style="text-decoration:none" href="services.html">
+                    <div class="service">
 
-                    <h3> <a style="text-decoration:none" href="services.html">Move-In/Move-Out Cleaning</a></h3>
-                    <hr>
+                        <h3> Move-In/Move-Out</h3>
 
-                    <div class="service-image-move"></div>
 
+                        <!-- <div class="service-image-move"></div> -->
+
+                    </div>
+                </a>
                 </div>
             </div>
+        </section>
+
+        <section class="our-happy-customers">
+            <div class="our-happy-customers-90">
+                <h1>Our Happy Customers</h1>
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="text">I had my home cleaned for the first time by Biweekly Maid. They arrived on time and service was very fast and well detailed. I really appreciated their attentiveness and proficiency. Thank you guys I must recommend</div>
+                        <br>
+                        <div class="review-name">Julia - Walnut Creek ⭐️⭐️⭐️⭐️⭐️</div>
+                    </div>
+
+                    <div class="mySlides fade">
+
+
+                        <div class="text">Response - Text back in a very timely manner, professional, and accommodating to your schedule. Service - Two friendly, professional ladies cleaned my kitchen, fridge, stove, and microwave in a little less than hour. They did a
+                            spectacular job. My fridge is sparkling! They cleared my front door entrance of cat litter and took all my trash.</div>
+                        <br>
+                        <div class="review-name">Ee Vonn - San Jose ⭐️⭐️⭐️⭐️⭐️</div>
+                    </div>
+
+                    <div class="mySlides fade">
+
+
+                        <div class="text">I hate cleaning, but I want clean counters and I'm allergic to dust. We have a lot of stuff in a smallish 1 bedroom space and a pet, so the dust accumulates. Two nice ladies showed up right on time today to clean my apartment.
+                            I'm now in a made bed, with a clean bathroom, vacuumed/dusted apartment, clean kitchen, and they did the inside of my fridge.</div>
+                        <br>
+                        <div class="review-name">Tracy - Concord ⭐️⭐️⭐️⭐️⭐️</div>
+
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+        </section>
         </div>
-    </section>
-
-    <section class="our-happy-customers">
-        <div class="our-happy-customers-90">
-            <h1>Our Happy Customers</h1>
-
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
-
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <div class="text">I had my home cleaned for the first time by Biweekly Maid. They arrived on time and service was very fast and well detailed. I really appreciated their attentiveness and proficiency. Thank you guys I must recommend</div>
-                    <br>
-                    <div class="review-name">Julia - Walnut Creek ⭐️⭐️⭐️⭐️⭐️</div>
-                </div>
-
-                <div class="mySlides fade">
-
-
-                    <div class="text">Response - Text back in a very timely manner, professional, and accommodating to your schedule. Service - Two friendly, professional ladies cleaned my kitchen, fridge, stove, and microwave in a little less than hour. They did a spectacular
-                        job. My fridge is sparkling! They cleared my front door entrance of cat litter and took all my trash.</div>
-                    <br>
-                    <div class="review-name">Ee Vonn - San Jose ⭐️⭐️⭐️⭐️⭐️</div>
-                </div>
-
-                <div class="mySlides fade">
-
-
-                    <div class="text">I hate cleaning, but I want clean counters and I'm allergic to dust. We have a lot of stuff in a smallish 1 bedroom space and a pet, so the dust accumulates. Two nice ladies showed up right on time today to clean my apartment. I'm
-                        now in a made bed, with a clean bathroom, vacuumed/dusted apartment, clean kitchen, and they did the inside of my fridge.</div>
-                    <br>
-                    <div class="review-name">Tracy - Concord ⭐️⭐️⭐️⭐️⭐️</div>
-
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-
-    </section>
-    <div data-spy="scroll" data-target="#scroll-thing" data-offset="0">
-        <section id="contact-uss" class="contact-us">
-            <div class="contact-us-90">
-                <h1>Contact Us For a FREE QUOTE!</h1>
-                <form class="contact-us-form" autocomplete="on">
+        <div data-spy="scroll" data-target="#scroll-thing" data-offset="0">
+            <section id="contact-uss" class="contact-us">
+                <div class="contact-us-90">
+                    <h1>Contact Us For a FREE QUOTE!</h1>
+                    <!-- <form class="contact-us-form" autocomplete="on">
                     <fieldset>
 
                         <input class="name" type="text" name="firstname" placeholder="Name" cols="50">
@@ -237,49 +280,54 @@
                         <br>
                         <input class="submit" type="submit" value="Submit">
                     </fieldset>
-                </form>
-            </div>
-        </section>
-    </div>
+                </form> -->
+                    <div class="free-quote-form">
+                        <script async data-uid="f54e83f92b" src="https://colossal-crafter-2839.ck.page/f54e83f92b/index.js"></script>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-    <footer>
-        <div class="footer-90">
-            <div class="footer-our-company">
-                <h2> Our Company</h2>
-                <div class="flex-container">
-                    <span style="font-size: 3em">
+        <footer>
+            <div class="footer-90">
+                <div class="footer-our-company footer-section">
+                    <h2> Our Company</h2>
+                    <div class="flex-container">
+                        <span style="font-size: 3em">
                             <i class="fab fa-facebook-f"></i>
 
                         </span>
-                    <span style="font-size: 3em">
+                        <span style="font-size: 3em">
                             <i class="fab fa-instagram"></i>
                         </span>
-                    <span style="font-size: 3em">
+                        <span style="font-size: 3em">
                                 <i class="fab fa-yelp"></i>
                             </span>
+                    </div>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
                 </div>
-                <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-            </div>
-            <div class="footer-our-address">
-                <h2> Our Address</h2>
-                <p>
-                    163 Maricopa Ct Pleasant Hill, 94523
-                    <br> 123-456-7890 info@mysite.com
-                </p>
-            </div>
-            <div class="footer-our-hours">
-                <h2> Operating Hours</h2>
-                <p>Mon - Fri: 8am - 8pm</p>
-                <p>Saturday: 9am - 7pm</p>
-                <p>​Sunday: 9am - 8pm</p>
+                <div class="footer-our-address footer-section">
+                    <h2> Our Address</h2>
+                    <p>
+                        163 Maricopa Ct Pleasant Hill, 94523
+                        <br> 123-456-7890 info@mysite.com
+                    </p>
+                </div>
+                <div class="footer-our-hours">
+                    <h2> Operating Hours</h2>
+                    <p>Mon - Fri: 8am - 8pm</p>
+                    <p>Saturday: 9am - 7pm</p>
+                    <p>​Sunday: 9am - 8pm</p>
+                </div>
+
             </div>
 
-        </div>
-        <hr>
-        <div class="footer-bottom">© 2019 by Green Bay LLC</div>
-    </footer>
 
-    <script src="./assets/javascript/app.js"></script>
+        </footer>
+        <div id="footer-bottom">© 2019 by Green Bay LLC</div>
+        <script src="./assets/javascript/app.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 
 </html>

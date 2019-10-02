@@ -1,143 +1,174 @@
-                            * {
-                                margin: 0px;
-                                padding: 0px;
-                                box-sizing: border-box;
-                            }
-                            
-                            body {
-                                font-family: 'Poppins', sans-serif;
-                            }
-                            
-                            button {
-                                font-family: 'Poppins', sans-serif;
-                                border-radius: 10px;
-                            }
-                            
-                            header {
-                                display: flex;
-                                width: 100%;
-                                height: 10vh;
-                                margin: auto;
-                                align-items: center;
-                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                                padding: 0 20px;
-                                position: fixed;
-                                background-color: white;
-                                z-index: 1000000;
-                            }
-                            
-                            .logo-container,
-                            .nav-links,
-                            .book-now {
-                                display: flex;
-                            }
-                            
-                            .book-now {
+                                * {
+                                    margin: 0px;
+                                    padding: 0px;
+                                    box-sizing: border-box;
+                                }
+                                
+                                body {
+                                    font-family: 'Roboto Slab', serif;
+                                }
+                                
+                                button {
+                                    font-family: 'Roboto Slab', serif;
+                                    border-radius: 5px;
+                                }
+                                
+                                h1,
+                                h2,
+                                h3,
+                                h4 {
+                                    font-family: 'Merriweather', serif;
+                                }
+                                
+                                .header-wrapper {
+                                    width: 100%;
+                                    height: 10vh;
+                                    background-color: #033b4c;
+                                }
+                                
+                                .header-top-full {
+                                    width: 100%;
+                                    background-color: #033b4c;
+                                    border-bottom: 1px #f7f3e4 solid;
+                                }
+                                
+                                .top-icon {
+                                    margin-right: 20px;
+                                }
+                                
+                                .header-top {
+                                    width: 80%;
+                                    margin: 0 auto;
+                                    text-align: end;
+                                    background-color: #033b4c;
+                                    color: #f7f3e4;
+                                    padding: 5px 0px 5px 0px;
+                                }
+                                
+                                header {
+                                    display: flex;
+                                    width: 80%;
+                                    height: 100%;
+                                    margin: auto;
+                                    align-items: center;
+                                    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+                                    padding: 0 20px;
+                                    /* position: fixed; */
+                                    /* z-index: 1000000; */
+                                }
+                                
+                                .logo-container,
+                                .nav-links,
+                                .book-now {
+                                    display: flex;
+                                }
+                                /* .book-now {
                                 color: #7ac043;
-                            }
-                            
-                            .logo-container img {
-                                height: 70px;
-                            }
-                            
-                            .logo-container {
-                                flex: 1;
-                            }
-                            
-                            .logo {
-                                font-weight: 600;
-                                margin: 5px;
-                                color: #7ac043;
-                                text-align: center;
-                            }
-                            
-                            nav {
-                                flex: 2;
-                            }
-                            
-                            .nav-links {
-                                justify-content: space-around;
-                                list-style: none;
-                            }
-                            
-                            .nav-link {
-                                color: #5f5f79;
-                                font-size: 18px;
-                                text-decoration: none;
-                            }
-                            
-                            .cart {
-                                flex: 1;
-                                justify-content: flex-end;
-                            }
-                            
-                            main {
-                                /* color: #7ac043; */
-                                color: black;
-                                position: relative;
-                                overflow: hidden;
-                                /* background: linear-gradient(to right, #89ec92, #d4f7d6); */
-                            }
-                            
-                            .home-page {
-                                /* background-position: center;
+                            } */
+                                
+                                .topnav img {
+                                    height: 40px;
+                                    margin-right: 39vw;
+                                }
+                                
+                                .logo-container {
+                                    flex: 1;
+                                }
+                                
+                                .logo {
+                                    font-weight: 600;
+                                    margin: 5px;
+                                    color: #7ac043;
+                                    text-align: center;
+                                }
+                                
+                                nav {
+                                    flex: 2;
+                                }
+                                
+                                .nav-links {
+                                    justify-content: space-around;
+                                    list-style: none;
+                                }
+                                
+                                .nav-link {
+                                    color: #f7f3e4;
+                                    font-size: 18px;
+                                    text-decoration: none;
+                                }
+                                
+                                .cart {
+                                    flex: 1;
+                                    justify-content: flex-end;
+                                }
+                                
+                                main {
+                                    /* color: #7ac043; */
+                                    color: #033b4c;
+                                    position: relative;
+                                    overflow: hidden;
+                                    /* background: linear-gradient(to right, #89ec92, #d4f7d6); */
+                                }
+                                
+                                .home-page {
+                                    /* background-position: center;
                                 background-repeat: no-repeat;
                                 background-size: cover; */
-                                color: black;
-                                position: relative;
-                                overflow: hidden;
-                            }
-                            
-                            .home-page:before {
-                                content: ' ';
-                                display: block;
-                                position: absolute;
-                                left: 0;
-                                top: 0;
-                                width: 100%;
-                                height: 100%;
-                                z-index: 1;
-                                opacity: 0.6;
-                                background-image: url("../images/clean-photo.jpg");
-                                background-repeat: no-repeat;
-                                background-position: 50% 0;
-                                -ms-background-size: cover;
-                                -o-background-size: cover;
-                                -moz-background-size: cover;
-                                -webkit-background-size: cover;
-                                background-size: cover;
-                            }
-                            
-                            .presentation {
-                                display: flex;
-                                width: 90%;
-                                margin: auto;
-                                min-height: 80vh;
-                                align-items: center;
-                                z-index: 2;
-                            }
-                            
-                            .introduction {
-                                flex: 1;
-                                z-index: 2;
-                            }
-                            
-                            .intro-text h1 {
-                                font-size: 48px;
-                                font-weight: bolder;
-                                color: rgb(64, 92, 255);
-                                /* background: linear-gradient(to right, #494964, #6f6f89);
+                                    color: #033b4c;
+                                    position: relative;
+                                    overflow: hidden;
+                                }
+                                
+                                .home-page:before {
+                                    content: ' ';
+                                    display: block;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: 1;
+                                    opacity: 0.6;
+                                    background-image: url("../images/clean-photo.jpg");
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 0;
+                                    -ms-background-size: cover;
+                                    -o-background-size: cover;
+                                    -moz-background-size: cover;
+                                    -webkit-background-size: cover;
+                                    background-size: cover;
+                                }
+                                
+                                .presentation {
+                                    display: flex;
+                                    width: 80%;
+                                    margin: auto;
+                                    min-height: 80vh;
+                                    align-items: center;
+                                    z-index: 2;
+                                }
+                                
+                                .introduction {
+                                    flex: 1;
+                                    z-index: 2;
+                                }
+                                
+                                .intro-text h1 {
+                                    font-size: 48px;
+                                    font-weight: bolder;
+                                    color: #033b4c;
+                                    /* background: linear-gradient(to right, #494964, #6f6f89);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent; */
-                            }
-                            
-                            .intro-text p {
-                                font-size: 20px;
-                            }
-                            /* .cta {
+                                }
+                                
+                                .intro-text p {
+                                    font-size: 20px;
+                                }
+                                /* .cta {
     padding: 50px 0px 0px 0px;
 } */
-                            /* .cta-select {
+                                /* .cta-select {
     border: 2px solid #c36cbb;
     background: transparent;
     color: #c36cbb;
@@ -146,36 +177,32 @@
     cursor: pointer;
     font-size: 16px;
 } */
-                            
-                            .cta-add {
-                                background: rgb(40, 101, 233);
-                                width: 150px;
-                                height: 50px;
-                                cursor: pointer;
-                                font-size: 16px;
-                                border: none;
-                                color: white;
-                                margin: 30px 0px 0px 0px;
-                                padding-top: 10px;
-                            }
-                            
-                            .cover {
-                                flex: 1;
-                                display: flex;
-                                justify-content: center;
-                                /* border: 1px outset black;
-                                border-radius: 10px; */
-                                z-index: 2;
-                            }
-                            
-                            .cover ul {
-                                height: 100%;
-                                animation: drop 1.5s ease;
-                                margin: 46px 0;
-                                font-size: 22px;
-                                font-weight: 200;
-                            }
-                            /* .big-circle {
+                                
+                                .cta-add {
+                                    background: #33a49f;
+                                    width: 200px;
+                                    height: 70px;
+                                    cursor: pointer;
+                                    font-size: 16px;
+                                    border: none;
+                                    color: white;
+                                    margin: 30px 0px 0px 0px;
+                                    padding-top: 10px;
+                                }
+                                
+                                .cover {
+                                    flex: 1;
+                                    display: flex;
+                                    justify-content: center;
+                                    /* border: 1px outset black;
+                                border-radius: 5px; */
+                                    z-index: 2;
+                                }
+                                
+                                .cover img {
+                                    animation: fade 3s ease;
+                                }
+                                /* .big-circle {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -207,335 +234,356 @@
     position: absolute;
     right: 20%;
 } */
-                            
-                            .why-choose-us {
-                                border-bottom: 1px solid blue;
-                                border-top: 1px solid blue;
-                                /* background-color: #eff7ff; */
-                                /* background-color: #dcf8be; */
-                                /* background-color: #dcf8be; */
-                                background-image: linear-gradient(-90deg, #dcf8be, #a6d6e7);
-                            }
-                            
-                            .why-choose-us-90,
-                            .our-services-90,
-                            .our-happy-customers-90,
-                            .contact-us-90,
-                            .get-your-quote-90 {
-                                margin: auto;
-                                width: 90%;
-                                padding: 60px 0px;
-                            }
-                            
-                            .why-choose-us-90 h1,
-                            .our-services-90 h1,
-                            .our-happy-customers-90 h1,
-                            .contact-us-90 h1 {
-                                font-size: 40px;
-                                text-align: center;
-                                margin: 20px 0px 40px 0px;
-                                /* color: #7ac043; */
-                                color: black;
-                            }
-                            
-                            .reasons {
-                                display: grid;
-                                grid-template-columns: 1fr 1fr;
-                                grid-template-rows: 1fr 1fr;
-                                grid-gap: 20px;
-                            }
-                            
-                            .reason {
-                                padding: 10px;
-                                border-radius: 10px;
-                                border: 1px outset black;
-                                background-color: white;
-                            }
-                            
-                            .reason-text {
-                                display: grid;
-                                grid-template-columns: 1fr 4fr;
-                                justify-items: center;
-                                margin: 10px;
-                            }
-                            
-                            .reason-img {
-                                width: 30%;
-                            }
-                            
-                            .our-services,
-                            .contact-us {
-                                background-image: linear-gradient(-45deg, #a6c0e7, #c8f8be);
-                            }
-                            
-                            .services {
-                                display: grid;
-                                grid-template-columns: 1fr 1fr 1fr;
-                                grid-gap: 20px;
-                            }
-                            
-                            .service {
-                                background-color: white;
-                                text-align: center;
-                                justify-content: center;
-                                border: 1px outset black;
-                                border-radius: 5px;
-                            }
-                            
-                            .service h3 {
-                                margin-top: 15px;
-                            }
-                            
-                            .service-image-home {
-                                position: flex;
-                                height: 200px;
-                                width: 100%;
-                                background-image: url("../images/home-cleaning.png");
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover;
-                                justify-content: center;
-                            }
-                            
-                            .service-image-commercial {
-                                position: relative;
-                                height: 200px;
-                                width: 100%;
-                                background-image: url("../images/commercial-cleaning.png");
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover;
-                            }
-                            
-                            .service-image-move {
-                                position: relative;
-                                height: 200px;
-                                width: 100%;
-                                background-image: url("../images/move.png");
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover;
-                            }
-                            
-                            .our-happy-customers {
-                                border-bottom: 1px solid blue;
-                                border-top: 1px solid blue;
-                                background-image: linear-gradient(-90deg, #dcf8be, #a6d6e7);
-                            }
-                            
-                            .review-name {
-                                text-align: center;
-                            }
-                            /* Slideshow container */
-                            
-                            .slideshow-container {
-                                max-width: 1000px;
-                                position: relative;
-                                margin: auto;
-                            }
-                            /* Hide the images by default */
-                            
-                            .mySlides {
-                                display: none;
-                            }
-                            /* Next & previous buttons */
-                            
-                            .prev,
-                            .next {
-                                cursor: pointer;
-                                position: absolute;
-                                top: 50%;
-                                width: auto;
-                                margin-top: -22px;
-                                padding: 16px;
-                                color: #7ac043;
-                                font-weight: bold;
-                                font-size: 18px;
-                                transition: 0.6s ease;
-                                border-radius: 0 3px 3px 0;
-                                user-select: none;
-                            }
-                            /* Position the "next button" to the right */
-                            
-                            .next {
-                                right: 0;
-                                border-radius: 3px 0 0 3px;
-                            }
-                            /* On hover, add a black background color with a little bit see-through */
-                            
-                            .prev:hover,
-                            .next:hover {
-                                background-color: rgba(0, 0, 0, 0.8);
-                            }
-                            /* Caption text */
-                            
-                            .text {
-                                color: black;
-                                font-size: 15px;
-                                padding: 8px 12px;
-                                width: 80%;
-                                text-align: center;
-                                margin-left: 10%;
-                            }
-                            /* The dots/bullets/indicators */
-                            
-                            .dot {
-                                cursor: pointer;
-                                height: 15px;
-                                width: 15px;
-                                margin: 0 2px;
-                                background-color: #bbb;
-                                border-radius: 50%;
-                                display: inline-block;
-                                transition: background-color 0.6s ease;
-                            }
-                            
-                            .active,
-                            .dot:hover {
-                                background-color: #717171;
-                            }
-                            
-                            .contact-us {
-                                border-bottom: 1px solid blue;
-                                border-top: 1px solid blue;
-                            }
-                            
-                            fieldset {
-                                padding: 20px;
-                            }
-                            
-                            .contact-us-form {
-                                width: 50%;
-                                margin-left: 25%
-                            }
-                            
-                            .name {
-                                width: 30%;
-                                padding: 12px 20px;
-                                margin: 10px;
-                                border: none;
-                                border-bottom: 2px solid navy;
-                                border-radius: 10px;
-                            }
-                            
-                            .email {
-                                width: 30%;
-                                padding: 12px 20px;
-                                margin: 10px;
-                                border: none;
-                                border-bottom: 2px solid navy;
-                                border-radius: 10px;
-                            }
-                            
-                            .subject {
-                                width: 64%;
-                                padding: 12px 20px;
-                                margin: 10px;
-                                border: none;
-                                border-bottom: 2px solid navy;
-                                border-radius: 10px;
-                            }
-                            
-                            .message {
-                                width: 64%;
-                                height: 100px;
-                                padding: 12px 20px;
-                                margin: 10px;
-                                border: none;
-                                border-bottom: 2px solid navy;
-                                border-radius: 10px;
-                            }
-                            
-                            .submit {
-                                background: rgb(40, 101, 233);
-                                border-radius: 10px;
-                                padding: 12px 20px;
-                                margin: 10px;
-                                border: none;
-                                border-bottom: 2px solid navy;
-                                border-radius: 10px;
-                                color: white;
-                            }
-                            
-                            footer {
-                                padding: 20px;
-                                background-color: #669ac9;
-                            }
-                            
-                            .footer-90 {
-                                width: 90%;
-                                margin: auto;
-                                display: grid;
-                                grid-template-columns: 2fr 1fr 1fr;
-                                grid-gap: 40px;
-                                padding: 10px 10px 40px 10px;
-                            }
-                            
-                            .footer-bottom {
-                                text-align: center;
-                                height: 50px;
-                            }
-                            
-                            .about-us-info {
-                                flex: 1;
-                                /* display: flex;
+                                
+                                .why-choose-us {
+                                    /* background-color: #eff7ff; */
+                                    /* background-color: #dcf8be; */
+                                    /* background-color: #dcf8be; */
+                                    /* background-image: linear-gradient(-90deg, #dcf8be, #a6d6e7); */
+                                    background-color: #f7f3e4;
+                                }
+                                
+                                .why-choose-us-90,
+                                .our-services-90,
+                                .our-happy-customers-90,
+                                .contact-us-90,
+                                .get-your-quote-90 {
+                                    margin: auto;
+                                    width: 80%;
+                                    padding: 60px 0px;
+                                }
+                                
+                                .why-choose-us-90 h1,
+                                .our-services-90 h1,
+                                .our-happy-customers-90 h1,
+                                .contact-us-90 h1 {
+                                    font-size: 40px;
+                                    text-align: center;
+                                    margin: 20px 0px 40px 0px;
+                                    /* color: #7ac043; */
+                                    color: #033b4c;
+                                }
+                                
+                                .reasons {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    grid-template-rows: 1fr 1fr;
+                                    grid-gap: 20px;
+                                }
+                                
+                                .reason {
+                                    color: #033b4c;
+                                    padding: 10px;
+                                    border-radius: 5px;
+                                    border: 1px outset black;
+                                    background-color: white;
+                                }
+                                
+                                .reason:hover {
+                                    animation: pop 0.5s ease;
+                                }
+                                
+                                .reason-text {
+                                    display: grid;
+                                    grid-template-columns: 1fr 4fr;
+                                    justify-items: center;
+                                    margin: 10px;
+                                }
+                                
+                                .reason-img {
+                                    width: 30%;
+                                }
+                                
+                                .our-services {
+                                    /* s */
+                                }
+                                
+                                .contact-us {
+                                    background-color: #f7f3e4;
+                                }
+                                
+                                .big-section {
+                                    background-image: linear-gradient(0deg, #dafcd4, #f7f3e4);
+                                }
+                                
+                                .services {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    grid-gap: 20px;
+                                }
+                                
+                                .service {
+                                    color: #033b4c;
+                                    background-color: white;
+                                    text-align: center;
+                                    justify-content: center;
+                                    border: 1px outset black;
+                                    border-radius: 5px;
+                                }
+                                
+                                .service:hover {
+                                    animation: pop ease 0.5s;
+                                }
+                                
+                                .service h3 {
+                                    margin-top: 25px;
+                                    margin-bottom: 25px;
+                                    color: #033b4c;
+                                }
+                                
+                                .service-image-home {
+                                    position: flex;
+                                    height: 200px;
+                                    width: 100%;
+                                    background-image: url("../images/home-cleaning.png");
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                    justify-content: center;
+                                }
+                                
+                                .service-image-commercial {
+                                    position: relative;
+                                    height: 200px;
+                                    width: 100%;
+                                    background-image: url("../images/commercial-cleaning.png");
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                
+                                .service-image-move {
+                                    position: relative;
+                                    height: 200px;
+                                    width: 100%;
+                                    background-image: url("../images/move.png");
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                
+                                .our-happy-customers {}
+                                
+                                .review-name {
+                                    text-align: center;
+                                    color: #033b4c;
+                                }
+                                /* Slideshow container */
+                                
+                                .slideshow-container {
+                                    max-width: 1000px;
+                                    position: relative;
+                                    margin: auto;
+                                }
+                                /* Hide the images by default */
+                                
+                                .mySlides {
+                                    display: none;
+                                }
+                                /* Next & previous buttons */
+                                
+                                .prev,
+                                .next {
+                                    cursor: pointer;
+                                    position: absolute;
+                                    top: 50%;
+                                    width: auto;
+                                    margin-top: -22px;
+                                    padding: 16px;
+                                    color: #7ac043;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    transition: 0.6s ease;
+                                    border-radius: 0 3px 3px 0;
+                                    user-select: none;
+                                }
+                                /* Position the "next button" to the right */
+                                
+                                .next {
+                                    right: 0;
+                                    border-radius: 3px 0 0 3px;
+                                }
+                                /* On hover, add a black background color with a little bit see-through */
+                                
+                                .prev:hover,
+                                .next:hover {
+                                    background-color: rgba(0, 0, 0, 0.8);
+                                }
+                                /* Caption text */
+                                
+                                .text {
+                                    color: #033b4c;
+                                    font-size: 15px;
+                                    padding: 8px 12px;
+                                    width: 80%;
+                                    text-align: center;
+                                    margin-left: 10%;
+                                }
+                                /* The dots/bullets/indicators */
+                                
+                                .dot {
+                                    cursor: pointer;
+                                    height: 15px;
+                                    width: 15px;
+                                    margin: 0 2px;
+                                    background-color: #bbb;
+                                    border-radius: 50%;
+                                    display: inline-block;
+                                    transition: background-color 0.6s ease;
+                                }
+                                
+                                .active,
+                                .dot:hover {
+                                    background-color: #717171;
+                                }
+                                
+                                .contact-us {}
+                                
+                                fieldset {
+                                    padding: 20px;
+                                }
+                                
+                                .contact-us-form {
+                                    width: 50%;
+                                    margin-left: 25%
+                                }
+                                
+                                .name {
+                                    width: 30%;
+                                    padding: 12px 20px;
+                                    margin: 10px;
+                                    border: none;
+                                    border: 1px white solid;
+                                    border-radius: 5px;
+                                }
+                                
+                                .email {
+                                    width: 30%;
+                                    padding: 12px 20px;
+                                    margin: 10px;
+                                    border: none;
+                                    border: 1px white solid;
+                                    border-radius: 5px;
+                                }
+                                
+                                .subject {
+                                    width: 64%;
+                                    padding: 12px 20px;
+                                    margin: 10px;
+                                    border: none;
+                                    border: 1px white solid;
+                                    border-radius: 5px;
+                                }
+                                
+                                .message {
+                                    width: 64%;
+                                    height: 100px;
+                                    padding: 12px 20px;
+                                    margin: 10px;
+                                    border: none;
+                                    border: 1px white solid;
+                                    border-radius: 5px;
+                                }
+                                
+                                .submit {
+                                    background: #33a49f;
+                                    border-radius: 5px;
+                                    padding: 12px 20px;
+                                    margin: 10px;
+                                    border: none;
+                                    border: 1px white solid;
+                                    border-radius: 5px;
+                                    color: white;
+                                }
+                                
+                                .free-quote-form {
+                                    background-color: #f7f3e4;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-left: 20%;
+                                }
+                                
+                                footer {
+                                    background-color: #033b4c;
+                                }
+                                
+                                footer h2 {
+                                    color: white;
+                                }
+                                
+                                .footer-90 {
+                                    width: 80%;
+                                    margin: auto;
+                                    display: grid;
+                                    grid-template-columns: 2fr 1fr 1fr;
+                                    grid-gap: 40px;
+                                    padding: 40px 0px;
+                                    color: #7c9a9d;
+                                }
+                                
+                                #footer-bottom {
+                                    width: 100%;
+                                    text-align: center;
+                                    height: 50px;
+                                    background-color: #022c39;
+                                    color: #7c9a9d;
+                                    padding-top: 15px;
+                                }
+                                
+                                .about-us-info {
+                                    flex: 1;
+                                    /* display: flex;
                                 flex-direction: row; */
-                                justify-content: start;
-                            }
-                            
-                            .empty-space {
-                                height: 90px;
-                            }
-                            
-                            .get-your-quote {
-                                width: 100%;
-                                background-image: linear-gradient(-90deg, #dcf8be, #a6d6e7);
-                                border-bottom: 1px solid blue;
-                                border-top: 1px solid blue;
-                            }
-                            
-                            .get-your-quote-90 {
-                                text-align: center;
-                            }
-                            
-                            .get-your-quote-90 h1 {
-                                font-size: 40px;
-                            }
-                            
-                            #get-your-quote-button {
-                                display: block;
-                                margin-left: auto;
-                                margin-right: auto;
-                            }
-                            
-                            .about-us-info h2,
-                            .about-us-info p {
-                                margin: 20px 0px;
-                                animation: drop 1.5s ease;
-                            }
-                            
-                            .button-flex {
-                                display: flex;
-                                align-items: center;
-                            }
-                            
-                            .service-cards {
-                                background-image: linear-gradient( #dcf8be, #a6d6e7);
-                                width: 100%;
-                                border-bottom: 1px solid blue;
-                                border-top: 1px solid blue;
-                            }
-                            
-                            .service-cards-90 {
-                                margin: 40px auto;
-                                width: 90%;
-                                display: grid;
-                                grid-template-columns: 1fr 1fr 1fr;
-                                grid-template-rows: 1fr;
-                                grid-template-areas: "#home-cleaning-card #commercial-cleaning-card move-card";
-                            }
-                            
-                            .service-card {
+                                    justify-content: start;
+                                }
+                                
+                                .empty-space {
+                                    height: 90px;
+                                }
+                                
+                                .get-your-quote {
+                                    width: 100%;
+                                    /* background-image: linear-gradient(-90deg, #dcf8be, #a6d6e7); */
+                                    background-color: #f7f3e4;
+                                }
+                                
+                                .get-your-quote-90 {
+                                    text-align: center;
+                                }
+                                
+                                .get-your-quote-90 h1 {
+                                    font-size: 40px;
+                                }
+                                
+                                #get-your-quote-button {
+                                    display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+                                
+                                .about-us-info h2,
+                                .about-us-info p {
+                                    margin: 20px 0px;
+                                    animation: drop 1.5s ease;
+                                }
+                                
+                                .button-flex {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                                .service-cards {
+                                    /* background-image: linear-gradient( #dcf8be, #a6d6e7); */
+                                    background-color: #f7f3e4;
+                                    width: 100%;
+                                }
+                                
+                                .service-cards-90 {
+                                    margin: auto;
+                                    width: 80%;
+                                    padding: 40px 0px 40px 0px;
+                                }
+                                /* .service-card {
                                 text-align: center;
                                 margin: 40px 0px;
                                 line-height: 4vh;
@@ -543,7 +591,7 @@
                             
                             .service-card img {
                                 height: 20vh;
-                                border-radius: 10px;
+                                border-radius: 5px;
                             }
                             
                             .service-card button {
@@ -555,179 +603,429 @@
                                 border: none;
                                 color: white;
                                 margin: 30px 0px 0px 0px;
-                            }
-                            
-                            #faq-questions h3 {
-                                margin: 20px 0px;
-                            }
-                            
-                            .billing-pricing {
-                                background-color: white;
-                                width: 100%;
-                            }
-                            
-                            .billing-pricing-90 {
-                                width: 90%;
-                                display: flex;
-                                margin: 0px auto;
-                                align-items: center;
-                            }
-                            
-                            .billing-pricing-title {
-                                flex: 1;
-                            }
-                            
-                            .billing-pricing-title h1 {
-                                font-size: 44px;
-                                font-weight: 500;
-                            }
-                            
-                            .billing-pricing-text {
-                                margin: 80px 0px;
-                                flex: 1;
-                            }
-                            
-                            .billing-pricing-text h3 {
-                                margin: 20px 0px;
-                            }
-                            
-                            .booking-90 {
-                                width: 90%;
-                                margin: auto;
-                                padding: 40px;
-                            }
-                            
-                            .booking-90 h1 {
-                                margin-bottom: 30px;
-                            }
-                            
-                            .booking-90 h2 {
-                                margin-bottom: 15px;
-                            }
-                            
-                            #booking-date {
-                                margin-left: 165px;
-                            }
-                            
-                            .booking-row {
-                                display: flex;
-                                margin: auto;
-                            }
-                            
-                            .booking-info {
-                                flex: 1;
-                            }
-                            
-                            .booking-info-submit {
-                                flex: 1;
-                                margin-left: 100px;
-                                font-size: 24px;
-                                text-align: center;
-                            }
-                            
-                            label {
-                                /* To make sure that all labels have the same size and are properly aligned */
-                                display: inline-block;
-                                width: 150px;
-                                text-align: right;
-                            }
-                            
-                            .booking-input {
-                                padding: 5px;
-                                margin: 10px;
-                                width: 20vw;
-                                border-radius: 5px;
-                            }
-                            
-                            .booking-button {
-                                padding: 5px;
-                                margin: 10px;
-                                width: 100px;
-                                margin-left: 160px;
-                            }
-                            
-                            .your-message {
-                                display: flex;
-                                align-items: center;
-                                margin-left: 3px;
-                            }
-                            
-                            .booking-section {
-                                border: 1px solid black;
-                                border-radius: 10px;
-                                padding: 20px;
-                            }
-                            
-                            #service-requesting {
-                                margin-left: 165px;
-                            }
-                            /* Fading animation */
-                            
-                            .fade {
-                                -webkit-animation-name: fade;
-                                -webkit-animation-duration: 1.5s;
-                                animation-name: fade;
-                                animation-duration: 1.5s;
-                            }
-                            
-                            @-webkit-keyframes fade {
-                                from {
-                                    opacity: .4
+                            } */
+                                
+                                .service-cards-90 h3,
+                                h5 {
+                                    text-align: center;
+                                    margin: 30px 0px;
                                 }
-                                to {
-                                    opacity: 1
+                                
+                                .areas h4 {
+                                    margin: 30px 0px;
                                 }
-                            }
-                            
-                            @keyframes fade {
-                                from {
-                                    opacity: .4
+                                
+                                .my-cards {
+                                    display: grid;
+                                    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+                                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                                    grid-template-rows: 1fr 1fr;
+                                    grid-template-areas: "card-1 card-2 card-3 card-4" "card-5 card-6 card-7 card-8";
+                                    grid-gap: 20px;
                                 }
-                                to {
-                                    opacity: 1
+                                
+                                .my-card {
+                                    text-align: center;
+                                    background-color: #033b4c;
+                                    color: #f7f3e4;
+                                    border-radius: 5px;
                                 }
-                            }
-                            
-                            @keyframes drop {
-                                0% {
-                                    opacity: 0;
-                                    transform: translateY(-80px);
+                                
+                                .my-card:hover {
+                                    animation: pop ease 0.5s;
                                 }
-                                100% {
-                                    opacity: 1;
-                                    transform: translateY(0px);
+                                
+                                .card-name {
+                                    padding-top: 20px;
+                                    border-bottom: 1px solid #f7f3e4;
+                                    width: 100%;
+                                    height: 70px;
                                 }
-                            }
-                            
-                            @media screen and (max-width: 1024px) {
-                                .presentation {
-                                    flex-direction: column;
+                                
+                                .card-price {
+                                    font-size: 30px;
+                                    font-weight: 700;
+                                    padding: 30px 0px;
                                 }
-                                .introduction {
-                                    margin-top: 5vh;
+                                
+                                .card-text {
+                                    padding: 0px 0px 30px 0px;
+                                }
+                                
+                                .book-now-button {
+                                    width: 150px;
+                                    height: 50px;
+                                    border-radius: 10px;
+                                    background-color: #033b4c;
+                                    color: #f7f3e4;
+                                    margin: 20px 0px 40px 0px;
+                                }
+                                
+                                .book-now-button:hover {
+                                    background-color: #f7f3e4;
+                                }
+                                
+                                .areas {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    grid-template-areas: "area-1 area-2 area-3";
+                                }
+                                
+                                .more-space {
+                                    padding: 30px 0px;
+                                }
+                                
+                                .can-not li {
+                                    width: 50%;
+                                    margin-left: 33%;
+                                }
+                                
+                                .can-not ul {
+                                    padding-bottom: 40px;
+                                }
+                                
+                                #faq-questions h3 {
+                                    margin: 20px 0px;
+                                }
+                                
+                                .billing-pricing {
+                                    background-color: #f7f3e4;
+                                    width: 100%;
+                                }
+                                
+                                .billing-pricing-90 {
+                                    width: 90%;
+                                    display: flex;
+                                    margin: 0px auto;
+                                    align-items: center;
+                                }
+                                
+                                .billing-pricing-title {
+                                    flex: 1;
+                                }
+                                
+                                .billing-pricing-title h1 {
+                                    font-size: 44px;
+                                    font-weight: 500;
+                                }
+                                
+                                .billing-pricing-text {
+                                    margin: 80px 0px;
+                                    flex: 1;
+                                }
+                                
+                                .billing-pricing-text h3 {
+                                    margin: 20px 0px;
+                                }
+                                
+                                .booking-90 {
+                                    width: 80%;
+                                    margin: auto;
+                                    padding: 40px;
+                                }
+                                
+                                .booking-90 h1 {
+                                    margin-bottom: 30px;
+                                }
+                                
+                                .booking-90 h2 {
+                                    margin-bottom: 15px;
+                                }
+                                
+                                #booking-date {
+                                    margin-left: 165px;
+                                }
+                                
+                                .booking-row {
+                                    display: flex;
+                                    margin: auto;
+                                }
+                                
+                                .booking-info {
+                                    flex: 1;
+                                }
+                                
+                                .booking-info-submit {
+                                    flex: 1;
+                                    margin-left: 100px;
+                                    font-size: 24px;
                                     text-align: center;
                                 }
-                                .intro-text h1 {
-                                    font-size: 30px;
+                                
+                                label {
+                                    /* To make sure that all labels have the same size and are properly aligned */
+                                    display: inline-block;
+                                    width: 150px;
+                                    text-align: right;
                                 }
-                                .intro-text p {
-                                    font-size: 18px;
+                                
+                                .booking-input {
+                                    padding: 5px;
+                                    margin: 10px;
+                                    width: 20vw;
+                                    border-radius: 5px;
                                 }
-                                .cta {
-                                    padding: 10px 0px 0px 0px;
+                                
+                                .booking-button {
+                                    padding: 5px;
+                                    margin: 10px;
+                                    width: 100px;
+                                    margin-left: 160px;
                                 }
-                                .laptop-select {
-                                    bottom: 5%;
-                                    right: 50%;
-                                    width: 50%;
-                                    transform: translate(50%, 5%);
+                                
+                                .your-message {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-left: 3px;
                                 }
-                                .cover img {
-                                    height: 80%;
+                                
+                                .booking-section {
+                                    border: 1px solid black;
+                                    border-radius: 5px;
+                                    padding: 20px;
                                 }
-                                .small-circle,
-                                .medium-circle,
-                                .big-circle {
-                                    opacity: 0.2;
+                                
+                                #service-requesting {
+                                    margin-left: 165px;
                                 }
-                            }
+                                
+                                .topnav-full {
+                                    width: 100%;
+                                    background-color: #033b4c;
+                                }
+                                
+                                .topnav {
+                                    overflow: hidden;
+                                    background-color: #033b4c;
+                                    color: #f7f3e4;
+                                    width: 80%;
+                                    margin: auto;
+                                }
+                                
+                                .topnav a {
+                                    float: left;
+                                    display: block;
+                                    color: #f2f2f2;
+                                    text-align: center;
+                                    padding: 14px 16px;
+                                    text-decoration: none;
+                                    font-size: 17px;
+                                }
+                                /* .topnav a:hover {
+                                    background-color: #ddd;
+                                    color: black;
+                                } */
+                                
+                                .topnav a.active {
+                                    background-color: #4CAF50;
+                                    color: white;
+                                }
+                                
+                                .topnav .icon {
+                                    display: none;
+                                }
+                                /* Fading animation */
+                                
+                                .fade {
+                                    -webkit-animation-name: fade;
+                                    -webkit-animation-duration: 2s;
+                                    animation-name: fade;
+                                    animation-duration: 2s;
+                                }
+                                
+                                .pop {
+                                    -webkit-animation-name: pop;
+                                    -webkit-animation-duration: 0.5s;
+                                    animation-name: pop;
+                                    animation-duration: 0.5s;
+                                }
+                                
+                                @keyframes pop {
+                                    0% {
+                                        transform: translateY(0px);
+                                    }
+                                    100% {
+                                        transform: translateY(-10px);
+                                    }
+                                }
+                                
+                                @-webkit-keyframes pop {
+                                    0% {
+                                        transform: translateY(0px);
+                                    }
+                                    100% {
+                                        transform: translateY(-10px);
+                                    }
+                                }
+                                
+                                @-webkit-keyframes fade {
+                                    from {
+                                        opacity: .4
+                                    }
+                                    to {
+                                        opacity: 1
+                                    }
+                                }
+                                
+                                @keyframes fade {
+                                    from {
+                                        opacity: .4
+                                    }
+                                    to {
+                                        opacity: 1
+                                    }
+                                }
+                                
+                                @keyframes drop {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(-80px);
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                        transform: translateY(0px);
+                                    }
+                                }
+                                
+                                @media screen and (max-width: 1024px) {
+                                    .presentation {
+                                        flex-direction: column;
+                                    }
+                                    .introduction {
+                                        margin-top: 5vh;
+                                        text-align: center;
+                                    }
+                                    .intro-text h1 {
+                                        font-size: 30px;
+                                    }
+                                    .intro-text p {
+                                        font-size: 18px;
+                                    }
+                                    .cta {
+                                        padding: 10px 0px 0px 0px;
+                                    }
+                                    .laptop-select {
+                                        bottom: 5%;
+                                        right: 50%;
+                                        width: 50%;
+                                        transform: translate(50%, 5%);
+                                    }
+                                    .cover img {
+                                        height: 80%;
+                                    }
+                                    .small-circle,
+                                    .medium-circle,
+                                    .big-circle {
+                                        opacity: 0.2;
+                                    }
+                                    #email {
+                                        display: none;
+                                    }
+                                    .logo-container img {
+                                        height: 40px;
+                                    }
+                                    .nav-links {
+                                        display: none;
+                                    }
+                                    /* .nav-links {
+                                    display: flex;
+                                    flex-direction: column;
+                                } */
+                                }
+                                
+                                @media screen and (max-width: 600px) {
+                                    .topnav a:not(:first-child) {
+                                        display: none;
+                                    }
+                                    .topnav a.icon {
+                                        float: right;
+                                        display: block;
+                                    }
+                                }
+                                
+                                @media screen and (max-width: 600px) {
+                                    .topnav.responsive {
+                                        position: relative;
+                                    }
+                                    .topnav.responsive .icon {
+                                        position: absolute;
+                                        right: 0;
+                                        top: 0;
+                                    }
+                                    .topnav.responsive a {
+                                        float: none;
+                                        display: block;
+                                        text-align: left;
+                                    }
+                                    .topnav img {
+                                        margin: 0;
+                                    }
+                                    .cover img {
+                                        width: 350px;
+                                        height: 300px;
+                                    }
+                                    .reasons {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    .reason {
+                                        margin: 20px 0px;
+                                    }
+                                    .reason-p {
+                                        margin-left: 10px;
+                                    }
+                                    .services {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    .service {
+                                        margin: 20px 0px;
+                                    }
+                                    .free-quote-form {
+                                        width: 300px;
+                                        margin: auto;
+                                    }
+                                    .footer-90 {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    .footer-section {
+                                        margin-bottom: 20px;
+                                    }
+                                    .my-cards {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    .my-card {
+                                        margin: 10px 0px;
+                                    }
+                                    .areas {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    .billing-pricing-90 {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    .billing-pricing-title {
+                                        margin-top: 30px;
+                                    }
+                                    .booking-90 {
+                                        padding: 0;
+                                        margin-bottom: 30px;
+                                    }
+                                    #booking-date,
+                                    #service-requesting,
+                                    .booking-row input,
+                                    .booking-row textarea {
+                                        margin: 0;
+                                        width: 60vw;
+                                    }
+                                    label {
+                                        display: block;
+                                        text-align: left;
+                                    }
+                                    textarea {
+                                        margin-top: 20px;
+                                    }
+                                }

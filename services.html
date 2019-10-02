@@ -6,32 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/11ed4400a1.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Roboto+Slab&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Green Bay | Cleaning Service</title>
 </head>
 
 <body>
-    <header>
-
-        <div class="logo-container">
-
-            <a href="index.html"> <img src="assets/images/logo.png" alt="logo" /></a>
+    <div class="header-top-full">
+        <div class="header-top">
+            <i class="fas fa-envelope-square top-icon"> hello@greenbay.com</i>
+            <i class="fas fa-phone"> (925)-565-4206</i>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="about-us.html">About Us</a></li>
-                <li><a class="nav-link" href="services.html">Services</a></li>
-                <li><a class="nav-link" href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-        <div class="book-now">
-            <h3><a href="services.html" style="text-decoration: none">Book Now</a></h3>
-        </div>
+    </div>
+    <!-- <div class="header-wrapper">
+        <header>
 
-    </header>
+            <div class="logo-container">
+
+                <a href="index.html"> <img src="assets/images/logo.png" alt="logo" /></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li><a class="nav-link" href="services.html">Services</a></li>
+                    <li><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li>
+                        <a class="nav-link" href="services.html" style="text-decoration: none">Book Now</a>
+                    </li>
+
+                </ul>
+            </nav>
+          <div class="book-now">
+                    <h3><a href="services.html" style="text-decoration: none">Book Now</a></h3>
+                </div> -->
+
+    <!-- </header>
+    </div> -->
+
+    <div class="topnav-full">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about-us.html">About Us</a>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="faq.html">FAQ</a>
+            <a class="nav-link" href="services.html">Book Now</a>
+
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
 
     <main>
         <section class="presentation">
@@ -55,7 +86,7 @@
 
         <section class="service-cards">
             <div class="service-cards-90">
-                <div class="service-card" id="home-cleaning-card">
+                <!-- <div class="service-card" id="home-cleaning-card">
                     <img src="assets/images/home-cleaning.png">
                     <br>
                     <a>Home Cleaning</a>
@@ -78,21 +109,220 @@
                     <p>3 hours</p>
                     <p>200$</p>
                     <button><a href = "booking.html" style = "text-decoration: none">Book Now</a></button>
+                </div> -->
+
+                <h3>As Promised: Simple, Flat-Rate Pricing For Everyone.</h3>
+                <hr>
+                <div class="my-cards">
+                    <div class="my-card" id="card-1">
+                        <div class="card-name">Studio</div>
+                        <div class="card-price">$119</div>
+                        <div class="card-text">Estimated Time 2 hours</div>
+                        <a href="booking.html"><button class = "book-now-button">Book Now</button></a>
+                    </div>
+
+                    <div class="my-card" id="card-2">
+                        <div class="card-name">One Bedroom</div>
+                        <div class="card-price">$129</div>
+                        <div class="card-text">Estimated Time 2 hours 30 minutes</div>
+                        <a href="booking.html"><button class = "book-now-button">Book Now</button></a>
+                    </div>
+
+                    <div class="my-card" id="card-3">
+                        <div class="card-name">Two Bedroom</div>
+                        <div class="card-price">$139</div>
+                        <div class="card-text">Estimated Time 3 hours</div>
+                        <a href="booking.html"><button class = "book-now-button">Book Now</button></a>
+                    </div>
+
+                    <div class="my-card" id="card-4">
+                        <div class="card-name">Three Bedroom</div>
+                        <div class="card-price">$189</div>
+                        <div class="card-text">Estimated Time 3 hours 30 minutes</div>
+                        <a href="booking.html"><button class = "book-now-button">Book Now</button></a>
+                    </div>
+
+                    <div class="my-card" id="card-5">
+                        <div class="card-name">Four Bedroom</div>
+                        <div class="card-price">$299</div>
+                        <div class="card-text">Estimated Time 4 hours</div>
+                        <a href="booking.html"><button class = "book-now-button">Book Now</button></a>
+                    </div>
+
+                    <div class="my-card" id="card-6">
+                        <div class="card-name">Five Bedroom</div>
+                        <div class="card-price">$349</div>
+                        <div class="card-text">Estimated Time 5 hours</div>
+                        <a href="booking.html"><button class = "book-now-button">Book Now</button></a>
+                    </div>
+
+                    <div class="my-card" id="card-7">
+                        <div class="card-name">Six Bedroom</div>
+                        <div class="card-price">$399</div>
+                        <div class="card-text">Estimated Time 6 hours</div>
+                        <a href="booking.html"><button class = "book-now-button">Book Now</button></a>
+                    </div>
+
+                    <div class="my-card" id="card-8">
+                        <div class="card-name">Hourly Service</div>
+                        <div class="card-price">$50</div>
+                        <div class="card-text">3 hours Minimum</div>
+                        <a href="booking.html"><button class = "book-now-button">Book Now</button></a>
+                    </div>
                 </div>
+                <hr>
+
+                <h3>Here Is What You Can Expect From Us:</h3>
+
+                <div class="areas">
+                    <div class="area-1">
+                        <h4>Kitchen Area</h4>
+                        <ul>
+                            <li>Mop the Floors
+                            </li>
+                            <li>Wipe and Clean Countertops
+                            </li>
+                            <li>Wash and Scrub Sink
+                            </li>
+                            <li>Polish all Stainless Steel Surfaces
+                            </li>
+                            <li>Empty Trash Can
+                            </li>
+                            <li>Wipe Cabinet Surfaces and Appliances
+                            </li>
+                            <li>Clean Inside and Outside of Microwave
+                            </li>
+                            <li>Dust and Wipe all Reachable Surfaces
+                            </li>
+                            <li>Wipe Door Handles and Light Switches
+                            </li>
+                            <li>Wipe Mirrors and Glass fixtures
+                            </li>
+                            <li>Blinds and Window Ledges
+                            </li>
+                            <li>Clean Stove Top and Stove Fan
+                            </li>
+                            <li>Clean Electronic Appliances
+                            </li>
+                            <li>Clean Electronic Appliances
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="area-2">
+                        <h4>Bathroom Area</h4>
+                        <ul>
+                            <li>Scrub and Clean Sinks
+                            </li>
+                            <li>Wipe Bathroom Cabinets
+                            </li>
+                            <li>Clean and Wipe Countertops
+                            </li>
+                            <li>Wipe Door Handles and Light Switches
+                            </li>
+                            <li>Dust Blinds, Window Ledges and Furniture in Bathrooms
+                            </li>
+                            <li>Wipe Mirrors and Shine Chrome Fixtures
+                            </li>
+                            <li>Scrub and Clean Toilets
+                            </li>
+                            <li>Scrub and Clean Tubs
+                            </li>
+                            <li>Scrub and Clean Showers
+                            </li>
+                            <li>Empty Trash Can
+                            </li>
+                            <li>Vacuum Bathroom Floors and Rugs
+                            </li>
+                            <li>Baseboard Detail Cleaning
+                            </li>
+                            <li>Mop Bathroom Floors
+                            </li>
+                            <li>Remove any Cobwebs or Dust Bunnies
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="area-3">
+                        <h4>Bedroom and Living Area</h4>
+                        <ul>
+                            <li>Bedroom and Living Areas
+
+                            </li>
+                            <li>Dust Blinds and Window Ledges/Base
+                            </li>
+                            <li>Low Ceiling Fans Detail Cleaning
+                            </li>
+                            <li>Make Beds and Change Bed Linens (If Provided)
+                            </li>
+                            <li>Dust Furniture and Decorations, Clean Glass Table Tops
+                            </li>
+                            <li>Empty Trash Can
+                            </li>
+                            <li>Vacuum Carpet, Small Rugs and Stairs
+                            </li>
+                            <li>Dust Closet Shelves
+                            </li>
+                            <li>Dust Surfaces of Drawers and other Furniture
+                            </li>
+                            <li>Vacuum Bathroom Floors and Rugs
+                            </li>
+                            <li>Dust and Wipe all Reachable Surfaces
+                            </li>
+                            <li>Wipe Door Handles and Light Switches
+                            </li>
+                            <li>Remove any Cobwebs or Dust Bunnies
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h5 class="more-space">We Would Be Glad To CUSTOM TAILOR A Cleaning For You! Just Let Us Know What In Particular You Want Us To Focus On And Our Specialists Will Handle The Rest.</h5>
+                <hr>
+
+                <h3>Although We Would Love To, We Won’t Be Able To Clean The Following:</h3>
+
+                <ul class="can-not">
+                    <li>Window Exteriors
+                    </li>
+                    <li>Deep Cleaning Carpets
+                    </li>
+                    <li>Animal Or Pet Waste
+                    </li>
+                    <li>Mold Removal Or Rust Removal
+                    </li>
+                    <li>Industrial Cleaning
+                    </li>
+                    <li>Lifting Of Heavy Items Or Furniture
+                    </li>
+                    <li>Reaching High Surfaces
+                    </li>
+                    <li>High Light Bulbs And Ceiling Fans
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="footer-90">
             <div class="footer-our-company">
                 <h2> Our Company</h2>
+                <div class="flex-container">
+                    <span style="font-size: 3em">
+                                <i class="fab fa-facebook-f"></i>
+    
+                            </span>
+                    <span style="font-size: 3em">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                    <span style="font-size: 3em">
+                                    <i class="fab fa-yelp"></i>
+                                </span>
+                </div>
                 <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
             </div>
             <div class="footer-our-address">
                 <h2> Our Address</h2>
                 <p>
-                    500 Terry Francois Street San Francisco, CA 94158
+                    163 Maricopa Ct Pleasant Hill, 94523
                     <br> 123-456-7890 info@mysite.com
                 </p>
             </div>
@@ -104,7 +334,10 @@
             </div>
 
         </div>
-        <hr>
-        <div class="footer-bottom">© 2019 by Green Bay LLC</div>
+
+
     </footer>
+    <div id="footer-bottom">© 2019 by Green Bay LLC</div>
+    <script src="./assets/javascript/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
