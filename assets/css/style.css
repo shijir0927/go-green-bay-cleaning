@@ -5,19 +5,20 @@
                                 }
                                 
                                 body {
-                                    font-family: 'Roboto Slab', serif;
-                                }
-                                
+                                    font-family: 'Muli', sans-serif; 
+                                    letter-spacing: 0.5px;  
+                                }                             
                                 button {
-                                    font-family: 'Roboto Slab', serif;
+                                    font-family: 'Muli', sans-serif;
                                     border-radius: 5px;
+                                    background-color: #00bba7;
                                 }
                                 
                                 h1,
                                 h2,
                                 h3,
                                 h4 {
-                                    font-family: 'Merriweather', serif;
+                                    font-family: 'Muli', sans-serif;
                                 }
                                 
                                 .header-wrapper {
@@ -303,7 +304,7 @@
                                 }
                                 
                                 .big-section {
-                                    background-image: linear-gradient(0deg, #dafcd4, #f7f3e4);
+                                    background-image: linear-gradient(0deg, #ffff, #f7f3e4);
                                 }
                                 
                                 .services {
@@ -798,7 +799,7 @@
                                     overflow: hidden;
                                     background-color: #033b4c;
                                     color: #f7f3e4;
-                                    width: 80%;
+                                    width: 81%;
                                     margin: auto;
                                 }
                                 
@@ -972,10 +973,11 @@
                                         flex-direction: column;
                                     }
                                     .reason {
-                                        margin: 20px 0px;
+                                        margin: 20px 0px 0px 0px;
                                     }
                                     .reason-p {
                                         margin-left: 10px;
+                                        text-align: center;
                                     }
                                     .services {
                                         display: flex;
