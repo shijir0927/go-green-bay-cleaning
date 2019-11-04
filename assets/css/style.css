@@ -202,6 +202,8 @@
                                 
                                 .cover img {
                                     animation: fade 3s ease;
+                                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                                                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
                                 }
                                 /* .big-circle {
     position: absolute;
@@ -270,6 +272,7 @@
                                     grid-template-columns: 1fr 1fr;
                                     grid-template-rows: 1fr 1fr;
                                     grid-gap: 20px;
+                                    
                                 }
                                 
                                 .reason {
@@ -278,6 +281,8 @@
                                     border-radius: 5px;
                                     border: 1px outset black;
                                     background-color: white;
+                                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                                                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
                                 }
                                 
                                 .reason:hover {
@@ -320,6 +325,8 @@
                                     justify-content: center;
                                     border: 1px outset black;
                                     border-radius: 5px;
+                                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                                                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
                                 }
                                 
                                 .service:hover {
@@ -888,7 +895,7 @@
                                     }
                                 }
                                 
-                                @media screen and (max-width: 1024px) {
+                                /* @media screen and (max-width: 1024px) {
                                     .presentation {
                                         flex-direction: column;
                                     }
@@ -913,6 +920,9 @@
                                     }
                                     .cover img {
                                         height: 80%;
+                                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                                                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          
                                     }
                                     .small-circle,
                                     .medium-circle,
@@ -931,8 +941,8 @@
                                     /* .nav-links {
                                     display: flex;
                                     flex-direction: column;
+                                } 
                                 } */
-                                }
                                 
                                 @media screen and (max-width: 600px) {
                                     .topnav a:not(:first-child) {
@@ -965,19 +975,24 @@
                                         margin: 0;
                                     }
                                     .cover img {
-                                        width: 350px;
-                                        height: 300px;
+                                        width: 300px;
+                                        height: 250px;
+                                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                        
                                     }
                                     .reasons {
                                         display: flex;
                                         flex-direction: column;
                                     }
+
+
                                     .reason {
                                         margin: 20px 0px 0px 0px;
                                     }
                                     .reason-p {
                                         margin-left: 10px;
-                                        text-align: center;
+                                       
                                     }
                                     .services {
                                         display: flex;
