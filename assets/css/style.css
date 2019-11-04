@@ -944,7 +944,7 @@
                                 } 
                                 } */
                                 
-                                @media screen and (max-width: 600px) {
+                                @media screen and (max-width: 650px) {
                                     .topnav a:not(:first-child) {
                                         display: none;
                                     }
@@ -957,7 +957,7 @@
                                     }
                                 }
                                 
-                                @media screen and (max-width: 600px) {
+                                @media screen and (max-width: 650px) {
                                     .topnav.responsive {
                                         position: relative;
                                     }
