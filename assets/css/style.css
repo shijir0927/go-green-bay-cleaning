@@ -281,8 +281,7 @@
                                     border-radius: 5px;
                                     border: 1px outset black;
                                     background-color: white;
-                                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-                                                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                    
                                 }
                                 
                                 .reason:hover {
@@ -325,8 +324,6 @@
                                     justify-content: center;
                                     border: 1px outset black;
                                     border-radius: 5px;
-                                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-                                                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
                                 }
                                 
                                 .service:hover {
@@ -895,7 +892,7 @@
                                     }
                                 }
                                 
-                                /* @media screen and (max-width: 1024px) {
+                                @media screen and (max-width: 1024px) {
                                     .presentation {
                                         flex-direction: column;
                                     }
@@ -941,8 +938,8 @@
                                     /* .nav-links {
                                     display: flex;
                                     flex-direction: column;
-                                } 
                                 } */
+                                }
                                 
                                 @media screen and (max-width: 600px) {
                                     .topnav a:not(:first-child) {
@@ -980,12 +977,6 @@
                                         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
                                         
-                                    }
-
-
-                                    .presentation{
-                                        display: flex;
-                                        flex-direction: column;
                                     }
                                     .reasons {
                                         display: flex;
